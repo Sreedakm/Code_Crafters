@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koythu Patt</title>
+<style>
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-image: url('https://i.pinimg.com/736x/2b/ab/3b/2bab3b7db4fd4b9133184ccd95e56161.jpg');
+      background-size:auto;
+      background-position: center;
+      background-attachment:scroll; /* Makes the background fixed while scrolling */
+      position: relative;
+    }
+
+    body::before{
+        content: '';
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      background-color: rgba(0, 0, 0, 0.669); /* Dark overlay */
+      z-index: -1; /* Make sure it stays behind the content */
+    }
+    header {
+      color: rgb(255, 223, 108);
+      text-align: center;
+      padding: 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.93);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #6b080b;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-weight:600;
+    }
+    p1{
+      font-size: 1.5em;
+      line-height: 1;
+      margin-bottom: 20px;
+      font-weight:200;
+    }
+
+
+    p2{
+      font-size: 1.25em;
+      line-height: 1;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight:200;
+    }
+
+
+    .feature-section h3 {
+      font-size: 1.2em;
+      color: #7a1d1d;
+      margin-bottom: 10px;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .features2 {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .feature-card {
+      background-color: #fafadd81;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 200px;
+      width: 200pxS;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-card h4 {
+      margin: 0 0 10px;
+      font-size: 1.1em;
+      color: #6b080b;
+    }
+
+    .feature-card p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Main Heading</h1>
+    </header>
+    <main>
+        <h2>Koythu Pattu</h2>
+        <p>Koythu Pattu (also known as Harvest Songs) is a traditional form of folk music in Kerala, associated with the agricultural practices and harvest celebrations of the region. It reflects the deep connection between the people of Kerala and their agrarian lifestyle.</p>
+        <h3>The key features of Koythu Pattu:</h3>
+  <div class="features">
+    <div class="feature-card">
+      <h4>1. Purpose and Context</h4>
+      <p2>Koythu Pattu is sung primarily during harvest season as a way to celebrate the culmination of hard work in the fields. It provides encouragement and builds camaraderie among workers as they reap their crops, usually paddy.</p2>
+    </div>
+    <div class="feature-card">
+      <h4>2. Themes</h4>
+      <p2>These songs often focus on nature, the beauty of the paddy fields, gratitude to the earth and deities, and the joys of harvesting. They also include practical advice, anecdotes, and humor to keep spirits high during the laborious harvest work.</p2>
+    </div>
+    <div class="feature-card">
+      <h4>3. Musical Style</h4>
+      <p2>The songs are simple, rhythmic, and easy to sing in a call-and-response format, allowing participation by groups.</p2>
+    </div>
+  </div>
+  <div class="features2">
+    <div class="feature-card">
+      <h4>4. Cultural Significance</h4>
+      <p2>Koythu Pattu reflects the collective spirit of agrarian life and serves as a reminder of the importance of cooperation in farming communities. These songs are often associated with festivals such as Onam, which celebrates the harvest and prosperity.</p2>
+    </div>
+    <div class="feature-card">
+      <h4>5. Modern Revival</h4>
+      <p2>With the decline of traditional farming practices, Koythu Pattu is less frequently sung in its original context. However, cultural organizations and folk art enthusiasts in Kerala are working to preserve and revive this heritage through performances and documentation.</p2>
+    </div>
+    </div>
+  </div>
+    </main>
+    
+</body>
+</html>

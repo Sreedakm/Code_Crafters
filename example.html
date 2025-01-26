@@ -1,0 +1,167 @@
+music page  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Forms of Kerala</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://example.com/kerala-music.jpg'); /* Replace with a suitable Kerala music image */
+      background-size: cover;
+      background-position: center;
+      color: rgb(103, 6, 6);
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(130, 8, 8, 0.93);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 0px 20px;
+      margin-top: -20px; /* Adjusted to reduce spacing */
+    }
+
+    section h2 {
+      color: rgb(125, 4, 4);
+      font-size: 2em; /* Increases the font size */
+      font-weight: bold; /* Makes the text bold (optional) */
+      margin-top: 10px; /* Adjust spacing above */
+      margin-bottom: 20px; /* Adjust spacing below */
+    }
+
+    .musical-forms {
+  display: flex; /* Align items horizontally */
+  flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+  gap: 20px; /* Adds space between the items */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.form-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 30%; /* Adjust the width of each card */
+}
+
+.form-card:hover {
+  transform: scale(1.05);
+}
+
+.form-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.form-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #6b080b;
+}
+
+.form-card p {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.form-card.koythu-pattu {
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: flex-end; /* Push content to the bottom */
+  padding: 20px;
+  background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEigRgNwXzhULlVLijbPhFQMJElC3DSwCJfJeSWsA0gStTPd2uj7NyTlaogPHPcVrKMTixOkTVRdQCAvyEO12ApNe0aoShcVe6X3ZbBww2eD-uCWbbbFU6SXSjb4vDk7oiW9o6BH8ntTuMc1pYnUmgAUhvB6ZpEoacRRa3vGYhUNYzPnukguq455FLuM'); /* Set the background image */
+  background-size: cover; /* Ensure the background image covers the entire block */
+  background-position: center center; /* Adjust this to crop the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  height: 300px; /* Adjust the block height */
+  position: relative; /* Make the block container relative to the positioned elements */
+}
+
+
+.form-card.koythu-pattu .content {
+  position: absolute;
+  bottom: 10px; /* Place the content 10px from the bottom */
+  left: 20px; /* Add space from the left */
+  right: 20px; /* Add space from the right */
+  background-color: rgba(0, 0, 0, 0.5); /* Darken the background for text readability */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-card.koythu-pattu h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+.form-card.koythu-pattu p {
+  margin-top: 5px;
+  color: white;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Musical Forms of Kerala</h1>
+  <p>Explore the rhythm and melody of Kerala’s rich musical traditions</p>
+</header>
+
+<section>
+  <section>
+    <h2 style="text-align: left; font-size: 2em; font-weight: bold;">Explore the Melodies</h2>
+    <div class="musical-forms">
+      <!-- Musical cards -->
+    </div>
+  </section>
+
+  <div class="musical-forms">
+    <div class="form-card koythu-pattu">
+        <a href="Koythupatt1.html" style="text-decoration: none; color: inherit; display: block; height: 100%;">
+          <div class="content">
+            <h3>Koythu Pattu</h3>
+            <p>Known for its thunderous beats and rhythmic patterns, Chenda Melam is an essential part of temple festivals and celebrations.</p>
+          </div>
+        </a>
+      </div>
+      
+    <div class="form-card">
+      <img src="https://example.com/kathakali.jpg" alt="Kathakali Music">
+      <h3>Kathakali Music</h3>
+      <p>The classical dance-drama of Kerala is accompanied by soulful music and intricate rhythms, bringing mythological tales to life.</p>
+    </div>
+    <div class="form-card">
+      <img src="https://example.com/sopana.jpg" alt="Sopana Sangeetham">
+      <h3>Sopana Sangeetham</h3>
+      <p>Sopana Sangeetham is a classical form of music rooted in spirituality, often performed in temples during rituals.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Musical Kerala | <a href="https://www.keralatourism.org" target="_blank">Learn More</a></p>
+</footer>
+
+</body>
+</html>
