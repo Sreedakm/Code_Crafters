@@ -1,6 +1,6 @@
 
 
-# [Project Name] 🎯
+# THUDI : A journey through music and culture 🎯
 
 
 ## Basic Details
