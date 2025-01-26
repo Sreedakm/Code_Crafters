@@ -24,7 +24,7 @@ We bring Kerala's musical heritage to life with an interactive platform showcasi
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- Languages used - HTML, CSS, JavaScript
+- Languages used - HTML, CSS, JavaScript, JSON
 
 
 ### Implementation
@@ -56,8 +56,8 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://youtu.be/5JRFYYe2NJ0
+General working of the website has been demonstrated here.
 
 # Additional Demos
 [Add any extra demo materials/links]
