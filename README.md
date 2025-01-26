@@ -4,41 +4,36 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Code Crafters
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
-### Hosted Project Link
+- Member 1: Sireesha A Menon    -GEC Thrissur
+- Member 2: Aryadevi P N        -GEC Thrissur
+- Member 3: Sreeda Kunnath Mana -GEC Thrissur
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+This project is a journey through Kerala's rich heritage of folk songs and traditional instruments. Each element is accompanied by detailed descriptions, and the instruments produce sound when clicked. YouTube links are provided to enrich the learning experience. It aims to promote awareness and appreciation of Kerala's folk culture.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+How do we preserve and share the vibrant folk culture of Kerala in a way that is interactive, educational, and engaging?
 
 ### The Solution
-[How are you solving it? Keep it fun!]
-
+We bring Kerala's musical heritage to life with an interactive platform showcasing folk songs and instruments. Each click is a gateway to sounds, stories, and cultural immersion—all in one fun and educational experience!
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages used - HTML, CSS, JavaScript
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
+1)Created interactive web pages using HTML and CSS to showcase Kerala's rich folk culture.
+2)Designed a feature where clicking on the images of instruments plays their corresponding sounds.
+3)Provided detailed information about each folk song, including its origin, cultural significance, and lyrics.
+4)Embedded audio tracks for select folk songs and included YouTube links for users to explore videos and performances.
+5)Focused on simplicity and responsiveness for a user-friendly experience, ensuring compatibility across devices.
 # Installation
 [commands]
 
@@ -49,14 +44,10 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![7c730817-1707-4821-bffc-a4f94c41f971](https://github.com/user-attachments/assets/82e8fc0e-3de2-4723-95a5-7f1eeeb1e5dc)
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
