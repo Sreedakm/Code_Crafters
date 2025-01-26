@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Forms of Kerala</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+       <h1>Sounds of Kerala: A Musical Exploration</h1>
+       <p>Discover the Traditional Instruments that Shape the Sound</p>
+</header>
+
+<section>
+  <h2>Explore the Sounds</h2>
+  <div class="musical-forms">
+    <div class="form-card">
+      <img id="idakka-img" src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/idakka.jpg" alt="Idakka">
+      <h3>Idakka</h3>
+      <p>The sacred drum with melodic beats.</p>
+      <audio id="idakka-sound" src="idakka-sound.mp3"></audio>
+      <a href="instruments.html?name=idakka" class="read-more">Read More</a>
+
+
+    </div>
+    <div class="form-card">
+      <img id="udukku-img" src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/udukku.jpg" alt="Udukku">
+      <h3>Udukku</h3>
+      <p>A traditional drum known for its unique sound modulation.</p>
+      <audio id="udukku-sound" src="udukku-sound.mp3"></audio>
+      <a href="instruments.html?name=udukku" class="read-more">Read More</a>
+
+  
+    </div>
+    <div class="form-card">
+      <img id="chenda-img" src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/chenda.jpg" alt="Chenda">
+      <h3>Chenda</h3>
+      <p>The powerful percussion instruments of Kerala.</p>
+      <audio id="chenda-sound" src="chenda-sound.mp3"></audio>
+      <a href="instruments.html?name=chenda" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img id="mazha-mooli-img" src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/mazha-mooli.jpg" alt="Mazha Mooli">
+      <h3>Mazha Mooli</h3>
+      <p>Creates the mesmerizing sound of rain and streams.</p>
+      <audio id="mazha-mooli-sound" src="mazha-mooli-sound.mp3"></audio>
+      <a href="instruments.html?name=mazha-mooli" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/kokra.jpg" alt="Kokra">
+      <h3>Kokra</h3>
+      <p>A tribal instruments with a comb-like shape.</p>
+      <a href="instruments.html?name=kokra" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img id="ilathalam=img" src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/elathalam.jpg" alt="Elathalam">
+      <h3>Elathalam</h3>
+      <p>A small cymbal that provides rhythmic accents.</p>
+      <audio id="ilathalam-sound" src="ilathalam-sound.mp3"></audio>
+      <a href="instruments.html?name=elathalam" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img id="thudi-img" src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/thudi.jpg" alt="Thudi">
+      <h3>Thudi</h3>
+      <p>A traditional tribal drum with a rich history.</p>
+      <audio id="thudi-sound" src="thudi-sound.mp3"></audio>
+      <a href="instruments.html?name=thudi" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/pulluvan-kudam.jpg" alt="Pulluvan Kudam">
+      <h3>Pulluvan Kudam</h3>
+      <p>An instruments that plays various notes by adjusting string tension.</p>
+      <audio id="kudam-sound" src="kudam-sound.mp3"></audio>
+      <a href="instruments.html?name=kudam" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img src="https://github.com/Sreedakm/Code_Crafters/blob/main/proj_img/maram.jpg" alt="Maram">
+      <h3>Maram</h3>
+      <p>A cylindrical drum integral to temple culture.</p>
+      <audio id="maram-sound" src="maram-sound.mp3"></audio>
+      <a href="instruments.html?name=maram" class="read-more">Read More</a>
+    </div>
+    <div class="form-card">
+      <img src="nanthuni.jpg" alt="Nanthuni">
+      <h3>Nanthuni</h3>
+      <p>A traditional string instrument with soothing tones.</p>
+      <audio id="nanthuni-sound" src="nanthuni-sound.mp3"></audio>
+      <a href="instruments.html?name=nanthuni" class="read-more">Read More</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Musical Kerala | </p>
+</footer>
+<script>
+    const formCards = document.querySelectorAll('.form-card');
+  
+    formCards.forEach((card) => {
+      const img = card.querySelector('img');
+      const audio = card.querySelector('audio');
+  
+      img.addEventListener('click', () => {
+        document.querySelectorAll('audio').forEach((sound) => {
+          sound.pause();
+          sound.currentTime = 0; // Reset audio to start
+        });
+        if (audio) {
+        audio.play();
+      } else {
+        alert("Sound not available for this instrument.");
+      }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
