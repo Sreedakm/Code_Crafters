@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument Details</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1 id="instrument-title"></h1>
+  </header>
+  <main>
+    <img id="instrument-image" alt="Instrument Image">
+    <p id="instrument-description"></p>
+    <audio id="instrument-audio" controls></audio>
+    <div class="video-container">
+      <h3>Watch a Video</h3>
+      <iframe id="instrument-video" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Musical Kerala</p>
+  </footer>
+
+  <script>
+    // Fetch the JSON data
+    fetch('instruments.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        // Get the instrument name from the query parameter
+        const params = new URLSearchParams(window.location.search);
+        const instrumentKey = params.get('name'); // e.g., 'nanthuni'
+
+        if (data[instrumentKey]) {
+          const instrument = data[instrumentKey];
+          document.getElementById('instrument-title').innerText = instrument.title;
+          document.getElementById('instrument-description').innerText = instrument.description;
+          document.getElementById('instrument-image').src = instrument.image;
+          document.getElementById('instrument-audio').src = instrument.audio;
+          if (instrument.video) {
+            document.getElementById('instrument-video').src = instrument.video;
+          }
+        }
+        
+         else {
+          document.body.innerHTML = '<h1>Instrument not found</h1>';
+        }
+      });
+  </script>
+</body>
+</html>

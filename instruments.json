@@ -1,0 +1,72 @@
+{
+    "thudi": {
+      "title": "Thudi: The Rhythmic Heart of Tribal Traditions",
+      "description": "Thudi, a traditional percussion instrument of the Paniya and Adiya tribes of Wayanad, Kerala, is integral to tribal rituals and performances. It is prominently featured in art forms like Pootham and Thirayattam, as well as in ritualistic dances like 'aandi nritham' in Devi temples.Crafted from the trunk of a jackfruit tree and covered with deer skin, the Thudi is smaller than Udukku and Idakka. Its design includes large membranes on either side, stretched over metal rings and fastened with laces to adjust tension. Played by suspending it from the shoulder, Thudi’s beats resonate with the rich cultural heritage of Kerala's tribes.",
+      "image": "thudi.jpg",
+      "audio": "thudi-sound.mp3",
+      "video": "https://www.youtube.com/embed/A90wl3D3dBk"
+    },
+    "idakka": {
+      "title": "Idakka: The Sacred Drum",
+      "description": "The Idakka or edakka is a percussion instrument of Kerala and it is very similar to the Damru.Known for its unique hourglass shape, it produces a wide range of tones despite its small size. Played with a stick and by squeezing the laces, the tension of the skin can be adjusted to create intricate rhythms. The 64 woolen balls, Poduppukal, symbolize the 64 classical art forms of India, reflecting the deep connection between the Idakka and the rich cultural heritage of Indian performing arts.",
+      "image": "idakka.jpg",
+      "audio": "idakka-sound.mp3",
+      "video": "https://www.youtube.com/embed/7FNQ_qdpIM0"
+    },
+    "nanthuni": {
+      "title": "Nanthuni: A Timeless String Instrument",
+      "description": "The Nanthuni is a traditional Indian string instrument believed to have roots in ancient Puranic times. Legend says Sage Narada played the Nanthuni during Shiva Tandava, infusing divine rhythm into mythology. Traditionally used by Hindu communities during festivals and religious ceremonies, its name derives from the Sanskrit term 'Namdhwani'.\n\nCrafted from woods like Kumizhu, Koovalam, and Chiitamruthu, the 4-foot-long instrument features strings made of pinjaavalli or modern metal alternatives. Its upper section, divided into seven parts, represents the seven classical musical notes, played using a slender stick. The Nanthuni embodies cultural heritage and timeless melodies.",
+      "image": "nanthuni.jpg",
+      "audio": "nanthuni-sound.mp3",
+      "video": "https://www.youtube.com/embed/10dq7LAlJk4"
+    },
+    "chenda": {
+      "title": "Chenda: The Powerful Drum of Kerala",
+      "description": "The Chenda is a traditional cylindrical drum from Kerala, known for its deep, resonant sound. Played with two sticks, it is a central instrument in Kerala’s folk music and temple rituals, particularly in Chenda Melam and Tandava performances.\n\nThe body of the Chenda is made from the soft wood of the jackfruit tree (Varikka Plavu), with its thickness reduced at intervals along the drum's body to enhance sound quality. It is greatly identified as a cultural element in Kerala.",
+      "image": "chenda.jpg",
+      "audio": "chenda-sound.mp3",
+      "video": "https://www.youtube.com/embed/LEvc2tqfHMs"
+    },
+    "udukku": {
+      "title": "Udukku: The Ancient Percussion",
+      "description": "Uduk is an ancient percussion instrument of South India, used in folk arts, temples, and Ayyappan songs.Udku plays an important role in most of the folk arts such as Kavadiyattam, Karakam, Villupattu, Lavani Pattu etc. Played horizontally, it is struck on one side, typically the right. The player holds the drum in place with the left hand and plays with the fingers and inner palm of the right hand. Pitch modulation is achieved by tightening or releasing the cloth strap. Its sharp, vibrant sound adds energy to Kerala’s musical ensembles.",
+      "image": "udukku.jpg",
+      "audio": "udukku-sound.mp3",
+      "video": "https://www.youtube.com/embed/Ke-mmknD5tw"
+    },
+    "maram": {
+      "title": "Maram: The Sacred Barrel Drum",
+      "description": "The Maram is a traditional cylindrical barrel drum used primarily in Kerala’s temple culture, also known as Pani Kottal. Both ends of the drum are covered with leather and secured with leather straps. There is a variant of the Maram, similar in design but with one face coated in black paste, which is used by the Paraya community during Devi worship dances. The Maram produces deep, resonant beats that play a significant role in temple rituals and community performances.",
+      "image": "maram.jpg",
+      "audio": "maram-sound.mp3",
+      "video": "https://www.youtube.com/embed/EwF6F6Ag3ZA"
+    },
+    "mazha-mooli": {
+      "title": "Mazha Mooli: The Rain Hummer of Kerala",
+      "description": "The Mazha Mooli is a fascinating traditional instrument that mimics the sounds of rain and streams. Crafted from bamboo, the instrument is about 110 cm long and 6 cm wide, with a spiral of bamboo sticks inside, along with small pebbles or roasted peas. As the tube tilts and rotates, the tiny weights tumble down the sticks, producing a cascading sound reminiscent of rain.This simple yet ingenious design reflects the resourcefulness of Kerala’s tribal communities, who have long used natural materials to create functional and artistic tools.",
+      "image": "mazha-mooli.jpg",
+      "audio": "mazha-mooli-sound.mp3",
+      "video": "https://www.youtube.com/embed/nlA0QTSn8xI"
+    },
+    "elathalam": {
+      "title": "Elathalam: The Miniature Cymbals of Kerala",
+      "description": "Elathalam, also known as Ilathalam, is a small yet distinctive metallic instrument from Kerala, made entirely of bronze. It resembles a miniature pair of cymbals, with two pieces that are struck together to produce a unique chime. Though small, Elathalam is thicker than regular cymbals, giving it a deeper, resonant sound.Used in various ethnic Kerala percussion ensembles like Panchavadyam, Chenda Melam, Thayambaka, and Kailaya Vathiyam, Elathalam adds a rhythmic layer to performances.",
+      "image": "elathalam.jpg",
+      "audio": "ilathalam-sound.mp3",
+      "video": "https://www.youtube.com/embed/79khMnoeMco"
+    },
+    "kokra": {
+      "title": "Kokra: The Tribal Instrument of Kerala",
+      "description": "The Kokra is a unique musical instrument used by the Kanikkar tribal community of Kerala. The upper half of the instrument is shaped like the comb on a cock's head, which gives it its name. It consists of a hollow iron tube with teeth and an iron rod, connected to the body by a chain.The Kokra is played in traditional performances such as Rappattu and Chattupattu, adding a distinct sound to the rhythmic ensembles.",
+      "image": "kokra.jpg",
+      "audio": "kokra-sound.mp3",
+      "video": "https://www.youtube.com/embed/s-K5JkI18Fk&t=213s"
+    },
+    "kudam": {
+      "title": "Kudam: The Instrument of Pulluvan Pattu",
+      "description": "The Kudam is a traditional instrument used in Pulluvan Pattu, a ritualistic music form in Kerala. It is made from a pot, with a hole at the bottom covered by calf skin. Two small holes are made on the side where the skin is attached, and a string is tied to these holes. The other end of the string is tied to a long stick, with a small splint placed on the side to elevate the stick.\nBy pulling the pot forward and backward, the Pulluvan can adjust the string tension, allowing them to play different notes, making the Kudam an essential part of this musical tradition.",
+      "image": "pulluvan-kudam.jpg",
+      "audio": "kudam-sound.mp3",
+      "video": "https://www.youtube.com/embed/A3kiv0pn_DA"
+    }
+  }

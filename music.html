@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Forms of Kerala</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: rgb(255, 213, 159);
+    }
+
+    header {
+      background-image: url('https://example.com/kerala-music.jpg'); /* Replace with a suitable Kerala music image */
+      background-size: cover;
+      background-position: center;
+      color: rgb(103, 6, 6);
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(130, 8, 8, 0.93);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 0px 20px;
+      margin-top: -20px; /* Adjusted to reduce spacing */
+    }
+
+    section h2 {
+      color: rgb(125, 4, 4);
+      font-size: 2em; /* Increases the font size */
+      font-weight: bold; /* Makes the text bold (optional) */
+      margin-top: 10px; /* Adjust spacing above */
+      margin-bottom: 20px; /* Adjust spacing below */
+    }
+
+    .musical-forms {
+      display: grid; /* Use grid for better control */
+      grid-template-columns: repeat(3, 1fr); /* Create 3 columns for each row */
+      gap: 20px; /* Adds space between the items */
+    }
+
+    .form-card {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      height: 300px; /* Set fixed height */
+      position: relative;
+    }
+
+    .form-card:hover {
+      transform: scale(1.05);
+    }
+
+    .form-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .form-card h3 {
+      margin: 20px 0 10px;
+      font-size: 1.5em;
+      text-align: center;
+      color: #6b080b;
+    }
+
+    .form-card p {
+      padding: 0 20px;
+      text-align: justify;
+    }
+
+    /* Style for each individual musical form */
+    .form-card.koythu-pattu,
+    .form-card.nanthuni-pattu {
+      grid-column: span 1;
+    }
+
+    .form-card>Pulluvan-pattu,
+    .form-card.navooru-pattu,
+    .form-card.vadakkan-pattu {
+      grid-column: span 1;
+    }
+
+    .form-card.thekkan-pattu,
+    .form-card.brahmanipattu,
+    .form-card.arabanamutt {
+      grid-column: span 1;
+    }
+
+    .form-card.vattappattu {
+      grid-column: span 1; /* Take the whole row */
+    }
+
+    /* Adjusting specific form card designs */
+    .form-card.koythu-pattu {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT51BRqlyUt1CBQ0jPvtX2uCHjYZE9qE-EP_A&s');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.koythu-pattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.koythu-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.koythu-pattu p {
+      margin-top: 5px;
+      color: white;
+    }
+
+    .form-card.kallam-pattu {
+      background-image: url('https://www.sahapedia.org/sites/default/files/styles/sp_page_banner_800x800/public/Banner%20image%20for%20the%20module.JPG?itok=ejWPHV-n');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.kallam-pattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.kallam-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.kallam-pattu p {
+      margin-top: 5px;
+      color: white;
+    }
+
+    .form-card.nanthuni-pattu {
+      background-image: url('https://i.ytimg.com/vi/hRHAWnOtGY0/sddefault.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.nanthuni-pattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.nanthuni-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.nanthuni-pattu p {
+      margin-top: 5px;
+      color: white;
+    }
+    .form-card.pulluvan-pattu {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgkgC-ihMhVxNtwNZSQ8fymAyWwphPdWoig&s');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.pulluvan-pattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.pulluvan-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.pulluvan-pattu p {
+      margin-top: 5px;
+      color: white;
+    }
+
+    .form-card.navooru-pattu {
+      background-image: url('https://i.ytimg.com/vi/fAu23-Censs/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXyhSMA8=&rs=AOn4CLBYnFhiInDCv8wQitEUIUctaxh4Kg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.navooru-pattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.navooru-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.navooru-pattu p {
+      margin-top: 5px;
+      color: white;
+    }
+    .form-card.margam-pattu {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKKuE_hEqMy5HK_PfG18RdTpabJ9tOdhsazg&s');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.form-card.margam-pattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.navooru-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.margam-pattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.margam-pattu p {
+      margin-top: 5px;
+      color: white;
+    }
+
+    .form-card.brahmanipattu{
+      background-image: url('https://i.ytimg.com/vi/fAxGLWZcxTs/sddefault.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.brahmanipattu .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.brahmanipattu h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.brahmanipattu p {
+      margin-top: 5px;
+      color: white;
+    }
+
+    .form-card.arabanamutt{
+      background-image: url('https://www.keralatourism.org/images/malabar/static-banner/large/Aravanamuttu-27012020114310.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.arabanamutt .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.arabanamutt h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.arabanamutt p {
+      margin-top: 5px;
+      color: white;
+    }
+
+    .form-card.sopana-sangeetham{
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdOs4rcKDdtpK69xh7F6Hprg6y8Oh-QHUqA&s');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .form-card.sopana-sangeetham .content {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-card.sopana-sangeetham h3 {
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
+    }
+
+    .form-card.sopana-sangeetham p {
+      margin-top: 5px;
+      color: white;
+    }
+    .form-card.vattappattu {
+  background-image: url('https://example.com/vattappattu.jpg'); /* Replace with the actual image URL */
+  background-size: cover;
+  background-position: center center;
+}
+.form-card.vattappattu {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaK_D94FD5O___ufPU61KyhOO1SFtVHTB-fg&s'); /* Replace with the actual image URL */
+  background-size: cover;
+  background-position: center center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.form-card {
+  display: block; /* Makes the entire card clickable */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a.form-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+    /* Additional form card styles as required */
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Musical Forms of Kerala</h1>
+  <p>Explore the rhythm and melody of Kerala’s rich musical traditions</p>
+</header>
+
+<section>
+  <h2>Explore the Melodies</h2>
+  <div class="musical-forms">
+    <a href="musicf.html?name=koythu" class="form-card koythu-pattu" >
+     
+      <div class="content">
+        <h3>Koythu Pattu</h3>
+        <p>Known for its thunderous beats and rhythmic patterns, Chenda Melam is an essential part of temple festivals and celebrations.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=kallam" class="form-card kallam-pattu">
+      <div class="content">
+        <h3>Kallam Pattu</h3>
+        <p>Kalam Pattu is a traditional ritualistic art form of Kerala that combines intricate floor art (Kalam) with devotional singing (Pattu).</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=nanthuni" class="form-card nanthuni-pattu">
+      <div class="content">
+        <h3>Nanthuni Pattu</h3>
+        <p>“Nanthuni Pattu” is a traditional song associated with the Nanthuni, a musical instrument native to Kerala, India.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=pulluvan" class="form-card pulluvan-pattu">
+      <div class="content">
+        <h3>Pulluvan Pattu</h3>
+        <p>Pulluvan Pattu is a ritualistic song sung during temple festivals, with its own distinct rhythm and melodies.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=navooru" class="form-card navooru-pattu">
+      <div class="content">
+        <h3>Navooru Pattu</h3>
+        <p>Navooru Pattu is a traditional folk song from Kerala that represents the culture and rituals of the region.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=margam" class="form-card margam-pattu">
+      <div class="content">
+        <h3>MargamKalli Pattu</h3>
+        <p>Margamkali is a traditional dance-drama form of Kerala, typically performed by women, and is associated with the Syrian Christian community.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=sopana" class="form-card sopana-sangeetham">
+      <div class="content">
+        <h3>Sopana Sangeetham</h3>
+        <p>Sopana Sangeetham is a traditional form of classical music that is performed in the temples of Kerala, especially in the temples dedicated to Lord Vishnu.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=brahmani" class="form-card brahmanipattu">
+      <div class="content">
+        <h3>Brahmanipattu</h3>
+        <p>Brahmanipattu is a devotional form of music performed by the Brahmin community during temple rituals.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=arabanamuttu" class="form-card arabanamutt">
+      <div class="content">
+        <h3>Arabanamutt</h3>
+        <p>Arabanamutt is a folk music genre from Kerala, associated with traditional agricultural practices and rural life.</p>
+      </div>
+    </a>
+
+    <a href="musicf.html?name=vattapattu" class="form-card vattappattu">
+      <div class="content">
+        <h3>Vattappattu</h3>
+        <p>Vattappattu is a folk song sung during the festival of Onam, reflecting the celebration of Kerala’s cultural heritage.</p>
+      </div>
+    </a>
+    
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Musical Kerala | <a href="https://www.keralatourism.org" target="_blank">Learn More</a></p>
+</footer>
+
+</body>
+</html>
